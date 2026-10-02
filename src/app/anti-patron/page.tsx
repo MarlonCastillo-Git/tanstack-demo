@@ -1,4 +1,5 @@
 "use client"; // necesita useState/useEffect para manejar el fetch a mano
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Product } from "@/lib/data"; 
 export default function AntiPatronPage() {
@@ -18,7 +19,7 @@ useEffect(() => {
 
     return (
         <div className="space-y-4">
-            <a href="../con-tanstack/">a página con tanstack</a>
+            <Link href="/con-tanstack">a página con tanstack</Link>
             <h1 className="text-2xl font-bold">1. Fetch manual con useEffect</h1>
             <p className="text-stone-600">
             Funciona, pero fíjate en todo lo que tuvimos que escribir para algo tan

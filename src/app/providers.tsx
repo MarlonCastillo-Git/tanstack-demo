@@ -13,7 +13,7 @@ export function Providers({ children }: { children: ReactNode }) {
         new QueryClient({
             defaultOptions: {
                 queries: {
-                    staleTime: 1000 * 10, // 10 segundos "fresh" - bajo a propósito para verlo en la prueba
+                    staleTime: 1000 * 60, // 10 segundos "fresh" - bajo a propósito para verlo en la prueba
                     gcTime: 1000 * 60 * 5, // 5 minutos en memoria tras quedar inactiva
                     refetchOnWindowFocus: true, // vuelve a pedir datos al volver a la pestaña
                     retry: 1,
